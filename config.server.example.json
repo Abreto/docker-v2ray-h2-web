@@ -1,0 +1,81 @@
+{
+  "log" : {
+    "loglevel": "info"
+  },
+  "inbounds": [{
+    "port": 8008,
+    "listen": "0.0.0.0",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [{
+        "id": "[UUID]",
+        "alterId": 4
+      }]
+    },
+    "streamSettings": {
+      "network": "http",
+      "httpSettings": {
+        "path": "/filesync"
+      },
+      "security": "tls",
+      "tlsSettings": {
+        "certificates": [{
+          "certificate": [
+            "-----BEGIN CERTIFICATE-----",
+            "MIIDEjCCAfqgAwIBAgIQZC1JNtqTTKaGDsQ1VGcUwTANBgkqhkiG9w0BAQsFADAo",
+            "MRIwEAYDVQQKEwlWMlJheSBJbmMxEjAQBgNVBAMTCVYyUmF5IEluYzAeFw0xOTA2",
+            "MDkxNDI0MjdaFw0xOTA5MDcxNTI0MjdaMCgxEjAQBgNVBAoTCVYyUmF5IEluYzES",
+            "MBAGA1UEAxMJVjJSYXkgSW5jMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC",
+            "AQEA1D/rL1RvnzSs8E8KvYOrBkKXrPP/CYZDIawCgT33DmWWD0jfce2o96dwa/wi",
+            "J3jVP5mNxc/nQpzUInXHy80gW/D0DatRDwJvgVrOyh5Kp8f7+MbvRmX0Lb2ryCnJ",
+            "iOe9nWZdXdSSU3nYF8x4LFWr78pRcUMLjjSquuViftHdO89gG96mV4iXtlOKRdmW",
+            "q3vGJTN4Hdloinpxx9vRTyPuO2gQ9mGj6JklqItZIxxcpLtvOSlogG1kR34dv3PO",
+            "9OCVGNWZgwtlimOUtuA+kcz/x6civEpfkMdYFP4YeQNmN2ubQoVEJwUWHSWV+t5n",
+            "NfEk/7Uu5x+km4bGlqY/Tc9nYQIDAQABozgwNjAOBgNVHQ8BAf8EBAMCAqQwEwYD",
+            "VR0lBAwwCgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsF",
+            "AAOCAQEAr/1vipysgxlx5oniAjTnZOAKRUa3FlkZ9v9zqzySAOQdkIY80EkXH9Ox",
+            "KgdH5wz+SUxV6CHX0dRO5qsbSfDs25dIwQJH8KJESY1a9nEHD8rfwnLcbzTKVoYO",
+            "CGanz5dzm00aP8+kyxFjIPv7kmvlWYb3lQ+2xQsROVJ9LzdPGQ9gc8Zo45g7Lr4I",
+            "ozNSXj8rCtiSWXctYFOXHs0WEOrud/KSU3O+ZR32KYGL0f+HM1eYsBLACEJSyQiq",
+            "T4gwFUMyByrV6V8gqMz0vScXZ3ryVsLfEBPYcYPtKV+WWXgCRd+5z09TkdODP79g",
+            "GWRhp0Lzh71pOXL/nwfnG6dYtLrp9A==",
+            "-----END CERTIFICATE-----"
+          ],
+          "key": [
+            "-----BEGIN RSA PRIVATE KEY-----",
+            "MIIEpQIBAAKCAQEA1D/rL1RvnzSs8E8KvYOrBkKXrPP/CYZDIawCgT33DmWWD0jf",
+            "ce2o96dwa/wiJ3jVP5mNxc/nQpzUInXHy80gW/D0DatRDwJvgVrOyh5Kp8f7+Mbv",
+            "RmX0Lb2ryCnJiOe9nWZdXdSSU3nYF8x4LFWr78pRcUMLjjSquuViftHdO89gG96m",
+            "V4iXtlOKRdmWq3vGJTN4Hdloinpxx9vRTyPuO2gQ9mGj6JklqItZIxxcpLtvOSlo",
+            "gG1kR34dv3PO9OCVGNWZgwtlimOUtuA+kcz/x6civEpfkMdYFP4YeQNmN2ubQoVE",
+            "JwUWHSWV+t5nNfEk/7Uu5x+km4bGlqY/Tc9nYQIDAQABAoIBAQCEWyep6BmDSjHd",
+            "2Sx1aboouTYkYDNWGSebw8v8FEwP6kFdXrAYN3/6j6uHaz9RJgS1GGhURoWMAIg4",
+            "xQHGkS/wpZ1LON3fYkFuhNYXLDSZ1BfI1yU23TUboP+SXpyShxCzKrZmYLyu2Xhr",
+            "vtHhs7r4WU3YN1rpXuZojcqSEwTG2jP0DZJLp8KOUbVxQtnFkfaV3XEfdUdFZPaA",
+            "HAvSQmaNcmkguWNML6pXD07gnkHBwJPMVgjXM7Ys20rMxxUv5tK3okd+8eSQL/kM",
+            "E0rx4WmVegl27ibV89cruhhLfqvYhofdQhrT+bATy8FRVFi6Az+pQsmBqhTx/2WP",
+            "FoRprXrRAoGBAOuD9v0CuqjCoBviklnQ+PJP/hBWzLn4kXJ/aOYBUDUYcGEOnP9B",
+            "VaZwjUPf7/ZjweXCiG3GuI1H2HZ1zU01WW7VXJm5+8L40wg7gbVENXcWKEJAuysh",
+            "fW5uw91fKoLl6bPMmysX3uH1r8rXqQorO8BTDvadhPgengIcl58FNKpjAoGBAOa1",
+            "6a0h07uMatHRTG4vzeUl1uyrn3g0xkUVRJ2XDXkLKHSgqu9vvtVLhq2BOxFJtGwK",
+            "plvvn8JGBV7f5rBPIBoFTUGgKRhlL8YPmaAL/grkiaH2D9uVohQlwYjdnk99ysPu",
+            "n44PGIw3uQM06a48BPyP+DY0e/0RhBGvRrSHIhBrAoGAWuEUSLNp5b8cW0ZFpQTf",
+            "W1mEtzdXTpfdQCpsBv0QvzxL+RfTeyfx7gTWbg+WoCQEaS10ya95/YJww91XOGjS",
+            "ttL8JZG/1Y+Al1enCJRmcSqKpG4oC0+kAB4b1GtpkxM26BuW8L0IU3cju4kWgIcI",
+            "SoGCb6V+7uOZo0T3OPSgSvMCgYEAky8m3u8ftxzD4QuXqQwSXMghL2fmGrgAbX4+",
+            "AhOl4rz9mDoQEyTFKCpAx1wUpNjSo8K/kxNyZmxpbLeG4p/4KOGNAfr9fLTBH6hA",
+            "J9y+u5BFRfBG+Z2igxv7Nie8oZXsz8biP6zdykaaX7NYCXH89GucvGgLWc3c5bNe",
+            "djlnv/UCgYEAlhVoTZFPh2d4yLVh2UWP6txfYMuiF1W9115z2VgLL+VJWkRB5rNi",
+            "KEH5Lgl9R8SEmE9r+8TIZwDO6wlb3AxGbEtmq+u2AYjyQLIE3iL8jsCVmJwjU9in",
+            "8rdLuBHCxZcNeZkafJxBWB4Z6S3QO8yfWMcNz/S2lj6rtiJ+e6KT+fE=",
+            "-----END RSA PRIVATE KEY-----"
+          ]
+        }]
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }]
+}
