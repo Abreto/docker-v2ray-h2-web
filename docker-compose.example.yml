@@ -17,6 +17,8 @@ services:
   v2ray:
     image: abreto/v2ray
     container_name: v2ray
+    ports:
+      - "8443:8008"
     volumes:
       - ./config.server.json:/etc/v2ray/config.json
     restart: always
