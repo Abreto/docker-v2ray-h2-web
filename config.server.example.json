@@ -21,6 +21,7 @@
       "security": "tls",
       "tlsSettings": {
         "certificates": [{
+          "usage": "issue",
           "certificate": [
             "-----BEGIN CERTIFICATE-----",
             "MIIDEjCCAfqgAwIBAgIQZC1JNtqTTKaGDsQ1VGcUwTANBgkqhkiG9w0BAQsFADAo",
