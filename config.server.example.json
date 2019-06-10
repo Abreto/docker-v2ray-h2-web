@@ -15,7 +15,7 @@
     "streamSettings": {
       "network": "http",
       "httpSettings": {
-        "host": ["v2ray"],
+        "host": ["[HOST]"],
         "path": "/filesync"
       },
       "security": "tls",

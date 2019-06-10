@@ -28,15 +28,14 @@
     },
     "streamSettings": {
       "network": "http",
+      "httpSettings": {
+        "host": ["[HOST]"],
+        "path": "/filesync"
+      },
       "security": "tls"
     },
     "tag": "OUT-[HOST]"
   }],
-  "transport": {
-    "httpSettings": {
-      "path": "/filesync"
-    }
-  },
   "routing": {
     "rules": [{
       "type": "field",

@@ -2,7 +2,7 @@
 log / stdout "{combined} | {scheme}://{host} {>Connection} {>Upgrade}"
 proxy / https://blog.abreto.net
 proxy /filesync https://v2ray:8008 {
-  header_upstream Host "v2ray"
+  header_upstream Host "[HOST]"
   header_upstream X-Forwarded-Proto "https"
   insecure_skip_verify
 }
