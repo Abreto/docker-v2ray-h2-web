@@ -10,4 +10,4 @@ $ ./configure <UUID> <Host>
 $ sudo docker-compose up -d
 ```
 
-Then connect to `https://<Host>:443/filesync` via vmess over HTTP/2.
+Then connect to `https://<Host>:443` via vmess over HTTP/2 with `path: "/filesync"`.
